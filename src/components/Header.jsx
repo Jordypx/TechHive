@@ -1,3 +1,4 @@
+import { RxPerson } from 'react-icons/rx'
 
 const Header = () => {
   return (
@@ -13,6 +14,8 @@ const Header = () => {
 
       <div className="header___nav flex ">
         <div className="header__signIn">
+          <RxPerson className='text-white'/>
+
           <span className="user">Hello Guest</span>
           <span className="signIn">Sign In</span>
         </div>
