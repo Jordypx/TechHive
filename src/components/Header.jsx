@@ -15,16 +15,16 @@ const Header = () => {
       </div>
 
       <div className="header___nav flex gap-8 leading-none">
-        <div className="header__signIn flex text-white text-sm leading-none">
+        <div className="header__signIn flex text-white text-sm leading-none mr-3">
           <RxPerson className='text-white'/>
          <div className="account flex flex-col">
-         <span className="user font-light cursor-pointer">Hello Guest</span>
-          <span className="signIn cursor-pointer">Sign In</span>
+         <span className="user font-light cursor-pointer text-xs">Hello Guest</span>
+          <span className="signIn cursor-pointer font-semibold">Sign In</span>
          </div>
         </div>
 
         <div className="header__orders flex flex-col mr-3 text-white text-sm leading-none">
-        <span className="returns cursor-pointer">Returns</span>
+        <span className="returns cursor-pointer font-light text-xs">Returns</span>
           <span className="orders cursor-pointer">& orders</span>
         </div>
 
@@ -33,7 +33,7 @@ const Header = () => {
           <span className="signIn cursor-pointer">Prime</span>
         </div>    */}
 
-        <div className="Header__Cart text-white cursor-pointer text-2xl">
+        <div className="Header__Cart text-white cursor-pointer text-3xl ">
           <BsCartPlus/>
         </div>
  
