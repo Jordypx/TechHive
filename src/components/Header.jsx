@@ -4,7 +4,7 @@ import { BsCartPlus } from 'react-icons/bs'
 
 const Header = () => {
   return (
-    <div className='Header h-14 flex items-center bg-black sticky top-0 px-10 w-full'>
+    <div className='Header h-14 flex items-center sticky top-0 px-10 w-full'>
       <div className="logo">
         <>TechHive</>
       </div>
@@ -33,8 +33,9 @@ const Header = () => {
           <span className="signIn cursor-pointer">Prime</span>
         </div>    */}
 
-        <div className="Header__Cart text-white cursor-pointer text-3xl ">
+        <div className="Header__Cart text-white  cursor-pointer text-3xl flex">
           <BsCartPlus/>
+          <span className='CartCounter text-xs'>0</span>
         </div>
  
       </div>

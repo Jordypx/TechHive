@@ -4,6 +4,11 @@
 
 /* styles */
 
+.Header {
+   background: rgba(0, 0, 0, 0.774);
+}
+
+
 .logo {
     font-size: 1.7rem;
     text-align: center;
@@ -20,8 +25,8 @@
     text-align: center;
     font-size: 2.2rem;
     background-color: rgb(255, 165, 0);
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     color: white;
     cursor: pointer;
 }
@@ -30,7 +35,19 @@
     width: 80%;
     padding: 0.3rem;
     margin-left: 2.6rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
     text-align:left;
+}
+
+.CartCounter {
+    position: absolute;
+    top: 14%;
+    right: 2.3%;
+    width: 20px;
+    height: 15px;
+    font-size: 0.7rem;
+    text-align: center;
+    background-color:  rgb(255, 165, 0);
+    border-radius: 37%;
 }
