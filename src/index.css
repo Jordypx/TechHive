@@ -21,7 +21,7 @@
 
 .header_searchicon {
     width: 8%;
-    padding: 7px;
+    padding: 6px;
     text-align: center;
     font-size: 2.2rem;
     background-color: rgb(255, 165, 0);
@@ -29,12 +29,13 @@
     border-bottom-right-radius: 1.5rem;
     color: white;
     cursor: pointer;
+    margin-top: 0.1rem;
 }
 
 .header__searchInput {
     width: 80%;
     padding: 0.3rem;
-    margin-left: 2.6rem;
+    margin-left: 2.5rem;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
     text-align:left;
