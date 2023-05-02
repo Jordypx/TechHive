@@ -12,29 +12,28 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-
 const data = [
     {
-        id: '1',
+        id: "1",
         Text: "lorem33333333",
         Btn: "Get Started",
         Img: "https://media-cdn.bnn.in.th/150788/MacBook_Pro_14-in_Silver_PDP_Image_Position-1__TH-square_medium.jpg"
     },
     {
-        id: '2',
-        Text: 'ljjsshjf',
+        id: "2",
+        Text: "'ljjsshjf'",
         Btn: "Get Started",
         Img: "https://media-cdn.bnn.in.th/150788/MacBook_Pro_14-in_Silver_PDP_Image_Position-1__TH-square_medium.jpg"
     },
     {
-        id: '3',
-        Text: 'ljjsshjf',
+        id: "3",
+        Text: "'ljjsshjf'",
         Btn: "Get Started",
         Img: "https://media-cdn.bnn.in.th/150788/MacBook_Pro_14-in_Silver_PDP_Image_Position-1__TH-square_medium.jpg"
-    },
+    }
 ]
 
-const ImageSlider = () => {
+const ImageSlider = ({data}) => {
     return ( 
         <>
         <Swiper
