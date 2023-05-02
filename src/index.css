@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles */
+
+.logo {
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fffffff4;
+}
+
+
+.header_searchicon {
+    padding: 5px;
+    /* height: 22px !important; */
+    background-color: #cd9042;
+    font-size: 1.8rem;
+}
+
+.header__searchInput {
+    width: 85%;
+    padding: 0.3rem;
+    margin-left: 2.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
