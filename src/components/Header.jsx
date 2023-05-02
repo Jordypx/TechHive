@@ -1,5 +1,5 @@
 import { RxPerson } from 'react-icons/rx'
-import { GrSearch } from 'react-icons/Gr'
+import { BsSearch } from 'react-icons/bs'
 import { BsCartPlus } from 'react-icons/bs'
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
       </div>
 
       <div className="header__search flex items-center rounded-3xl flex-1">
-        <input type="text" className="header__searchInput border-none outline-none" name=""/>
-        <GrSearch className='header_searchicon'/>
+        <input type="text" className="header__searchInput border-none outline-none" placeholder=''/>
+        <BsSearch className='header_searchicon'/>
       </div>
 
       <div className="header___nav flex justify-evenly">
