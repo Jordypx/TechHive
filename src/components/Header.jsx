@@ -4,7 +4,7 @@ import { BsCartPlus } from 'react-icons/bs'
 
 const Header = () => {
   return (
-    <div className='Header h-14 flex items-center bg-green-900 sticky top-0 px-6 w-full'>
+    <div className='Header h-14 flex items-center bg-black sticky top-0 px-6 w-full'>
       <div className="logo">
         <>TechHive</>
       </div>
@@ -14,24 +14,26 @@ const Header = () => {
         <BsSearch className='header_searchicon'/>
       </div>
 
-      <div className="header___nav flex justify-evenly">
-        <div className="header__signIn flex flex-col mr-3 text-white">
+      <div className="header___nav flex gap-8 leading-none">
+        <div className="header__signIn flex text-white text-sm leading-none">
           <RxPerson className='text-white'/>
-          <span className="user">Hello Guest</span>
-          <span className="signIn">Sign In</span>
+         <div className="account flex flex-col">
+         <span className="user font-light cursor-pointer">Hello Guest</span>
+          <span className="signIn cursor-pointer">Sign In</span>
+         </div>
         </div>
 
-        <div className="header__orders flex flex-col mr-3 text-white">
-        <span className="returns">Returns</span>
-          <span className="orders">& orders</span>
+        <div className="header__orders flex flex-col mr-3 text-white text-sm leading-none">
+        <span className="returns cursor-pointer">Returns</span>
+          <span className="orders cursor-pointer">& orders</span>
         </div>
 
-        <div className="header__Prime flex flex-col mr-3 text-white">
-        <span className="user">Your</span>
-          <span className="signIn">Prime</span>
-        </div>   
+        {/* <div className="header__Prime flex flex-col mr-3 text-white text-sm leading-none">
+        <span className="user cursor-pointer">Your</span>
+          <span className="signIn cursor-pointer">Prime</span>
+        </div>    */}
 
-        <div className="Header__Cart text-white">
+        <div className="Header__Cart text-white cursor-pointer text-2xl">
           <BsCartPlus/>
         </div>
  
