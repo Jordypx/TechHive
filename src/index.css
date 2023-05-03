@@ -4,111 +4,14 @@
 
 /* styles */
 
-.Header {
-   background: rgb(0, 0, 0);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-.logo {
-    font-size: 1.7rem;
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: 800;
-    font-style:normal;
+.head-content {
+    font-size: 0.5rem;
+    background: #002800;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fffffff4;
-}
-
-.header_searchicon {
-    width: 8%;
-    padding: 6px;
-    text-align: center;
-    font-size: 2.2rem;
-    background-color: rgb(255, 165, 0);
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    color: white;
-    cursor: pointer;
-    margin-top: 0.1rem;
-}
-
-.header__searchInput {
-    width: 80%;
-    padding: 0.3rem;
-    margin-left: 2.5rem;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    text-align:left;
-}
-
-.CartCounter {
-    position: absolute;
-    top: 14%;
-    right: 2.3%;
-    width: 20px;
-    height: 15px;
-    font-size: 0.7rem;
-    text-align: center;
-    background-color:  rgb(255, 165, 0);
-    border-radius: 37%;
-}
-
-.home {
-    padding: 10rem;
-}
-
-/* .home:nth-child(even) {
-    background: #eee;
-} */
-
-.home .home-slider .slide {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6rem;
-    padding-top: 7rem;
-    margin-right: -9rem;
-}
-
-.home .home-slider .slide .content {
-    flex: 1 1 45rem;
-    padding-top: 7rem;
-    line-height: 1.4;
-    margin-top: -1.3rem;
-    margin-left: 9rem;
-}
-
-.home .home-slider .slide .image {
-    margin-right: -9rem;
-    flex: 1 1 45rem;
-}
-
-.home .home-slider .slide .image img {
-    width: 80%;
-}
-
-
-.home .home-slider .slide .content span {
-    color: rgb(234 88 12);
-    font-size: 2.3rem;
-    font-weight: 600;
-}
-
-.home .home-slider .slide .content h3 {
-    color: rgba(0, 0, 0, 0.738);
-    font-size: 6rem;
-    font-weight: 600;
-    margin-top: -1rem;
-}
-
-.home .home-slider .slide .content p {
-    color: rgba(0, 0, 0, 0.935);
-    font-size: 2.2rem;
-    padding:5rem 0 ;
-    line-height: 1.5;
-    margin-top: -3.95rem;
-}
-
-.swiper-pagination .buttet-active {
-   background: rgb(234 88 12);
-}
+}  

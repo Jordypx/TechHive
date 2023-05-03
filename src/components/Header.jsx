@@ -1,45 +1,26 @@
 import { RxPerson } from 'react-icons/rx'
 import { BsSearch } from 'react-icons/bs'
 import { BsCartPlus } from 'react-icons/bs'
+import { BiPhone } from 'react-icons/bi'
 
 const Header = () => {
   return (
-    <div className='Header h-14 flex items-center sticky top-0 px-10 w-full'>
-      <div className="logo">
-        <>TechHive</>
-      </div>
-
-      <div className="header__search flex items-center rounded-3xl flex-1">
-        <input type="text" className="header__searchInput border-none outline-none" placeholder=''/>
-        <BsSearch className='header_searchicon'/>
-      </div>
-
-      <div className="header___nav flex gap-6 leading-none">
-        <div className="header__signIn flex text-white text-sm leading-none mr-3">
-          <RxPerson className='text-white text-xl mr-1 mt-1'/>
-         <div className="account flex flex-col">
-         <span className="user font-light cursor-pointer text-xs">Hello Guest</span>
-          <span className="signIn cursor-pointer font-semibold">Sign In</span>
-         </div>
+    <div className="">
+      <header className='head-content flex items-center justify-between p-1.5 m-0 text-white'>
+        <div className="phone-number flex items-center gap-1 px-2">
+          <BiPhone className='text-white text-xs' />
+          <i>+234 975645636</i>
         </div>
-
-        <div className="header__orders flex flex-col mr-4 text-white text-sm leading-none">
-        <span className="returns cursor-pointer font-light text-xs">Returns</span>
-          <span className="orders cursor-pointer">& orders</span>
+        <div className="discount">
+          <p>Get 50% off on selected items <i className=''>|</i> <span className='ml-2'>Buy Now</span></p>
         </div>
-
-        {/* <div className="header__Prime flex flex-col mr-3 text-white text-sm leading-none">
-        <span className="user cursor-pointer">Your</span>
-          <span className="signIn cursor-pointer">Prime</span>
-        </div>    */}
-
-        <div className="Header__Cart text-white  cursor-pointer text-3xl flex">
-          <BsCartPlus/>
-          <span className='CartCounter text-xs'>0</span>
+        <div className="blog-contact px-2 cursor-pointer">
+          <i className='mr-3'>Blog</i>
+          <i>Location</i>
         </div>
- 
-      </div>
+      </header>
     </div>
+   
   )
 }
 
