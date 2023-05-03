@@ -42,7 +42,7 @@ const Header = () => {
        </div>
       </div>
 
-    <div className="options flex gap-7 mr-3 mt-4">
+    <div className="options flex gap-7 mr-3 mt-3.5">
 
     <div className="login flex">
         <RxPerson />
