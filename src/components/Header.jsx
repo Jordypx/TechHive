@@ -35,7 +35,7 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className="search-bar mt-2">
+      <div className="search-bar mt-1">
         <input type="text" placeholder='Search Products' />
        <div className="search-icon">
        <BsSearch />
@@ -49,12 +49,12 @@ const Header = () => {
         <span className='text-lg'>sign in</span>
       </div>
 
-      <div className="orders -mt-1 font-normal">
+      <div className="orders -mt-1 font-semibold">
         <span>Orders</span>
       </div>
 
-      <div className="cart flex gap-1">
-        <BsCart2  className='text-lg'/>
+      <div className="cart flex gap-0.2s">
+        <BsCart2  className='text-lg -mt-0.5'/>
         {/* <span className="counter">0</span> */}
         <p className='text-sm'>cart</p>
       </div>

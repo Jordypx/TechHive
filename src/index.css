@@ -29,13 +29,13 @@
     font-weight: 500;
     margin-left: -1rem;
     margin-right: 6rem;
-    background: rgba(211, 211, 211, 0.59);
+    background: rgba(211, 211, 211, 0);
     border-radius: 2rem;
 }
 
 .search-bar .search-icon {
     position: absolute;
-    top: 9%;
+    top: 8.5%;
     right: 31.3%;
     cursor: pointer;
     color: #002800ac;
@@ -47,3 +47,43 @@
     margin-top: -0.4rem;
     cursor: pointer;
 }
+
+.sub-container {
+    background-color: rgba(211, 211, 211, 0.552);
+    width: 80%;
+    margin-left: 8.5rem;
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    gap: 8rem;
+}
+
+.home-discount {
+    margin-top: 2rem;
+}
+
+.home-discount h1 {
+    color:  #002800ce;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.home-discount button {
+    width: 20%;
+    text-align: center;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: #002800;
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
