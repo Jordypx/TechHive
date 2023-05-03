@@ -36,6 +36,14 @@
 .search-bar .search-icon {
     position: absolute;
     top: 9%;
-    right: 29.5%;
+    right: 31.3%;
+    cursor: pointer;
+    color: #002800ac;
+}
+
+.login span {
+    font-weight: 600;
+    margin-left: 0.2rem;
+    margin-top: -0.4rem;
     cursor: pointer;
 }

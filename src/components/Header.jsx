@@ -42,21 +42,21 @@ const Header = () => {
        </div>
       </div>
 
-    <div className="options flex gap-4">
+    <div className="options flex gap-7 mr-3 mt-4">
 
     <div className="login flex">
         <RxPerson />
-        <span>Sign In</span>
+        <span className='text-lg'>sign in</span>
       </div>
 
-      <div className="orders">
+      <div className="orders -mt-1 font-normal">
         <span>Orders</span>
       </div>
 
-      <div className="cart flex">
-        <BsCart2  />
+      <div className="cart flex gap-1">
+        <BsCart2  className='text-lg'/>
         {/* <span className="counter">0</span> */}
-        <p>cart</p>
+        <p className='text-sm'>cart</p>
       </div>
     </div>
 
