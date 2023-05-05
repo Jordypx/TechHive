@@ -21,10 +21,6 @@
     color: #002800;
 }
 
-.search-bar {
-    border-bottom:rgb(0, 0, 34);
-}
-
 .search-bar input[type=text] {
     outline: none;
     width: 100%;
@@ -34,9 +30,8 @@
     font-weight: 500;
     margin-left: -1rem;
     margin-right: 6rem;
-    background: rgba(211, 211, 211, 0);
+    background: rgba(211, 211, 211, 0.153);
     border-radius: 2rem;
-    border-bottom:rgb(0, 0, 34);
 }
 
 .search-bar .search-icon {
