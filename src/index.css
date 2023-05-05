@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .head-content {
@@ -31,6 +32,7 @@
     margin-right: 6rem;
     background: rgba(211, 211, 211, 0);
     border-radius: 2rem;
+    border-bottom:#0020;
 }
 
 .search-bar .search-icon {
@@ -44,49 +46,50 @@
 .login span {
     font-weight: 600;
     margin-left: 0.2rem;
-    margin-top: -0.8rem;
+    margin-top: -0.40rem;
     cursor: pointer;
 }
 
 .sub-container {
-    background-color: rgb(255, 182, 193);
-    width: 94%;
-    margin-left: 2.7rem;
+    background-color: rgba(255, 182, 193, 0.181);
+    width: 92%;
+    margin-top: 1rem;
+    margin-left: 3.3rem;
     border-radius: .4rem;
 }
 
 .container {
     display: flex;
-    margin-top: 2rem;
-    justify-content: center;
-    gap: 17rem;
-    padding: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 11rem;
+    gap: 8rem;
 }
 
 .home-discount {
-    margin-top: 1.7rem;
-    
+    margin-top: 3.9rem;
 }
 
 .home-discount h1 {
-    /* color:  #002800ce; */
-    color: black;
-    font-size: 2rem;
+    color:  #025402ef;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 40px;
 }
 
 .home-discount button {
-    width: 20%;
+    width: 27%;
     text-align: center;
     font-weight: 700;
-    color: rgb(255, 255, 255);
-    background-color: #000;
+    color: rgba(255, 255, 255, 0.955);
+    background-color: #045104;
     font-size: 0.6rem;
     padding: 0.6rem;
     border-radius: 2rem;
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
 }
 
+.home-image img {
+    width: 43%;
+}
 
