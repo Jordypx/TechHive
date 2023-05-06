@@ -25,19 +25,18 @@
     outline: none;
     width: 100%;
     height: 85%;
-    padding: 12px 20px;
+    padding: 12px 23px;
     font-size: 0.8rem;
     font-weight: 500;
-    margin-left: -1rem;
     margin-right: 6rem;
     background: rgba(211, 211, 211, 0.153);
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .search-bar .search-icon {
     position: absolute;
     top: 8.5%;
-    right: 31.3%;
+    right: 30%;
     cursor: pointer;
     color: #002800ac;
 }

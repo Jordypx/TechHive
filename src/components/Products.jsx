@@ -2,8 +2,8 @@ import { RiStarSFill } from 'react-icons/ri'
 
 const Products = () => {
     return ( 
-        <div className="">
-                <h1 className="">
+        <div className="p-9">
+                <h1 className="font-semibold text-lg">
                     Headphones For You!
                  </h1>
 
@@ -11,7 +11,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img src="" alt="" className="" />
+                        <img src="./assets/headPhones" alt="" className="" />
                     </div>
 
                     <div className="content flex">
