@@ -11,7 +11,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img src="./assets/headPhones" alt="" className="" />
+                        <img src="./beats.png" alt="" className="" />
                     </div>
 
                     <div className="content flex">
@@ -46,7 +46,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        
+                        <img className='' src="./Max.png" alt="" />
                     </div>
 
                     <div className="content flex">
@@ -81,7 +81,7 @@ const Products = () => {
 
             <div className="Image-cards">
                     <div className="image">
-                        
+                        <img src="./My project (3).png" alt="" />
                     </div>
 
                     <div className="content flex">
@@ -115,7 +115,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        
+                        <img src="./headPhones.png" alt="" />
                     </div>
 
                     <div className="content flex">
