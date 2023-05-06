@@ -92,3 +92,52 @@
     width: 43%;
 }
 
+.headphones-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.content .price span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.description h2 {
+    font-size: 0.9rem;
+    color: #002800;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.description p {
+    font-size: 0.76rem;
+    color: #002800;
+    font-weight: 600;
+}
+
+.reviews span {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.reviews .stars {
+    color: #045104;
+}
+.description button {
+    /* background-color: #002800;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    text-align: center; */
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.955);
+    background-color: #045104;
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 1.4rem;
+    cursor: pointer;
+}
