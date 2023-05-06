@@ -11,7 +11,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img src="./beats.png" alt="" className="" />
+                        <img src="./beats.png" alt="" className="pb-3" />
                     </div>
 
                     <div className="content flex">
@@ -46,7 +46,7 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img className='' src="./Max.png" alt="" />
+                        <img className='p-2' src="./Max.png" alt="" />
                     </div>
 
                     <div className="content flex">
