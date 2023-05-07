@@ -1,4 +1,4 @@
-
+import Products from "../components/Products"
 
 const Home = () => {
     return ( 
@@ -15,6 +15,12 @@ const Home = () => {
               </div>
              </div>
              </div>
+
+            <div className="products">
+            <Products title="Beats Headphone" description="brand new beats headphone with discount" price={150.99}
+            image="./beats.png"
+            rating={5}/>
+            </div>
         </div>
      );
 }

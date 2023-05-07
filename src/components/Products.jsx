@@ -1,6 +1,6 @@
 import { RiStarSFill } from 'react-icons/ri'
 
-const Products = () => {
+const Products = ({ title, description, image, price, rating }) => {
     return ( 
         <div className="p-9">
                 <h1 className="font-semibold text-lg">
@@ -11,20 +11,18 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img src="./beats.png" alt="" className="pt-3" />
+                        <img src={image} alt="" className="pt-3" />
                     </div>
 
                     <div className="content flex gap-11">
                         <div className="description">
-                            <h2>AirPods Max</h2>
-                            <p>A brand new apple airpods max 2021</p>
+                            <h2>{title}</h2>
+                            <p>{description}</p>
                             <div className="reviews flex gap-2">
                                 <div className="stars flex">
-                                 <RiStarSFill />
-                                 <RiStarSFill />
-                                 <RiStarSFill />
-                                 <RiStarSFill />
-                                 <RiStarSFill />
+                                 {Array(rating).fill().map((_, i) => (
+                                    <RiStarSFill />
+                                 ))}
                                 </div>
 
                                 <span className="">
@@ -37,8 +35,8 @@ const Products = () => {
                             </div>
                         </div>
 
-                        <div className="price">
-                            <span className=''>$250.<i>44</i></span>
+                        <div className="price mr-2">
+                            <span className=''><strong>$</strong>{price}</span>
                         </div>
                     </div>
                  </div>
@@ -72,7 +70,7 @@ const Products = () => {
                             </div>
                         </div>
 
-                        <div className="price">
+                        <div className="price mr-2">
                             <span>$250.<i>44</i></span>
                         </div>
                     </div>
@@ -107,7 +105,7 @@ const Products = () => {
                             </div>
                         </div>
 
-                        <div className="price">
+                        <div className="price mr-2">
                             <span>$250.<i>44</i></span>
                         </div>
                     </div>
@@ -141,7 +139,7 @@ const Products = () => {
                             </div>
                         </div>
 
-                        <div className="price">
+                        <div className="price mr-2">
                             <span>$250.<i>44</i></span>
                         </div>
                     </div>
