@@ -7,14 +7,14 @@ const Products = () => {
                     Headphones For You!
                  </h1>
 
-            <div className="headphones-container">
+            <div className="headphones-container mt-3">
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img src="./beats.png" alt="" className="pb-3" />
+                        <img src="./beats.png" alt="" className="pt-3" />
                     </div>
 
-                    <div className="content flex">
+                    <div className="content flex gap-11">
                         <div className="description">
                             <h2>AirPods Max</h2>
                             <p>A brand new apple airpods max 2021</p>
@@ -46,10 +46,10 @@ const Products = () => {
 
                  <div className="Image-cards">
                     <div className="image">
-                        <img className='p-2' src="./Max.png" alt="" />
+                        <img className='pt-5 pl-5' src="./Max.png" alt="" />
                     </div>
 
-                    <div className="content flex">
+                    <div className="content flex gap-11">
                         <div className="description">
                             <h2>AirPods Max</h2>
                             <p>A brand new apple airpods max 2021</p>
@@ -84,7 +84,7 @@ const Products = () => {
                         <img src="./My project (3).png" alt="" />
                     </div>
 
-                    <div className="content flex">
+                    <div className="content flex gap-11">
                         <div className="description">
                             <h2>AirPods Max</h2>
                             <p>A brand new apple airpods max 2021</p>
@@ -118,7 +118,7 @@ const Products = () => {
                         <img src="./headPhones.png" alt="" />
                     </div>
 
-                    <div className="content flex">
+                    <div className="content flex gap-11">
                         <div className="description">
                             <h2>AirPods Max</h2>
                             <p>A brand new apple airpods max 2021</p>

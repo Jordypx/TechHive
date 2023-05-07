@@ -97,13 +97,18 @@
    justify-content: space-between;
 }
 
+.content {
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+
 .content .price span {
     font-size: .8rem;
     font-weight: 600;
 }
 
 .description h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #002800;
     letter-spacing: .1rem;
     font-weight: 700;
@@ -113,6 +118,11 @@
     font-size: 0.76rem;
     color: #002800;
     font-weight: 600;
+    margin-top: .03rem;
+}
+
+.reviews {
+    margin-top: .27rem;
 }
 
 .reviews span {
@@ -124,12 +134,6 @@
     color: #045104;
 }
 .description button {
-    /* background-color: #002800;
-    color: white;
-    font-size: 0.6rem;
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    text-align: center; */
     width: 40%;
     text-align: center;
     font-weight: 700;
@@ -139,12 +143,15 @@
     padding: 0.6rem;
     border-radius: 1.4rem;
     cursor: pointer;
+    margin-top: .6rem;
 }
 
 .headphones-container .Image-cards .image {
-    padding: 2rem;
+    width: 97%;
+    height: 33vh;
+    padding: 1rem;
     border-radius: 0.2rem;
-    background: rgba(211, 211, 211, 0.362);
+    background: rgba(211, 211, 211, 0.22);
 }
 
 .headphones-container .Image-cards .image > img {
