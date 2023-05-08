@@ -8,13 +8,14 @@ function App() {
   return (
     <Router>
     <div className="">
-    <Routes>
+     <Header/>
+     <Home />
 
+      <Routes>
         <Route path='/checkout' element={<Header/>} />
-        <Route path="/" element={<Header />}/>
-        <Route path='' element={<Home />}/>
-
+        <Route path=''/>
       </Routes>
+      
      </div>
      </Router>
   )
