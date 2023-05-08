@@ -4,7 +4,7 @@ const Products = ({ title, description, image, price, rating }) => {
     return ( 
         <div className="p-9">
                 <h1 className="font-semibold text-lg">
-                    Headphones For You!
+                    New Releases
                  </h1>
 
             <div className="headphones-container mt-3">

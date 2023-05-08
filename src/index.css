@@ -152,6 +152,7 @@
     padding: 1rem;
     border-radius: 0.2rem;
     background: rgba(211, 211, 211, 0.22);
+    overflow: hidden;
 }
 
 .headphones-container .Image-cards .image > img {
