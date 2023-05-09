@@ -21,7 +21,7 @@ const Products = ({ title, description, image, price, rating }) => {
                             <div className="reviews flex gap-2">
                                 <div className="stars flex">
                                  {Array(rating).fill().map((_, i) => (
-                                    <RiStarSFill />
+                                    <RiStarSFill key={i}/>
                                  ))}
                                 </div>
 

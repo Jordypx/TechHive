@@ -3,7 +3,7 @@ import { BsSearch } from 'react-icons/bs'
 import { BsCart2 } from 'react-icons/bs'
 import { BiPhone } from 'react-icons/bi'
 
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
