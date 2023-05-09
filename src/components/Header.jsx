@@ -24,9 +24,12 @@ const Header = () => {
       </header>
 
      <div className="sub-heading flex justify-between px-10 mt-4">
-      <div className="logo-text text-3xl tracking-wide font-bold font-sans">
+      
+      <Link to="/">
+      <div className="logo-text text-3xl tracking-wide font-bold font-sans overflow-hidden">
         Techive
       </div>
+      </Link>
 
       <div className="devices-WeSell mt-4">
         <ul className='flex gap-5 text-xs font-semibold tracking-wider font-mono cursor-pointer'>
