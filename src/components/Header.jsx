@@ -3,6 +3,8 @@ import { BsSearch } from 'react-icons/bs'
 import { BsCart2 } from 'react-icons/bs'
 import { BiPhone } from 'react-icons/bi'
 
+import { Outlet, Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
@@ -53,11 +55,13 @@ const Header = () => {
         <span>Orders</span>
       </div>
 
-      <div className="cart flex gap-0.2s">
+     <Link to="/checkout">
+     <div className="cart flex gap-0.2s">
         <BsCart2  className='text-lg -mt-0.5'/>
         {/* <span className="counter">0</span> */}
         <p className='text-sm'>cart</p>
       </div>
+     </Link>
     </div>
 
 
