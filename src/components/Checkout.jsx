@@ -55,8 +55,7 @@ const Checkout = () => {
                              />
                         </div>
 
-                      hiuhohoih
-                      ioijfpj
+                      nhddhhoihv
 
                     </div>
 
