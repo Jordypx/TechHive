@@ -1,4 +1,6 @@
+import Payment from "./Payment";
 
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 const Checkout = () => {
     return ( 
@@ -27,12 +29,14 @@ const Checkout = () => {
                         </div>
 
                         <div className="delete-item">
-                            <button>Remove Item</button>
+                            <button className="flex items-center">Remove Item <RiDeleteBin6Line/></button>
                         </div>
                     </div>
             </div>
 
-            .
+            <div className="pay">
+                <Payment />
+            </div>
         </div>
         </div>
      );
