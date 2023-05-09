@@ -146,15 +146,6 @@
     margin-top: .6rem;
 }
 
-.review-item {
-    width: 60%;
-    padding: 1rem;
-}
-
-.container-description {
-    border: 1px solid #0028004a;
-}
-
 .headphones-container .Image-cards .image {
     width: 97%;
     height: 33vh;
@@ -169,16 +160,43 @@
     margin: 0 auto;
 }
 
-/* checkout page */
 
-.headPhone-image {
-    background-color: rgba(211, 211, 211, 0.463);
-    width: 30%;
+
+/* checkout page */
+.review-item {
+    width: 60%;
+    padding: 2rem;
+}
+
+.container-description {
+    border: 1px solid #0028004a;
+}
+
+.container-description .text {
+    margin-bottom: 1rem;
+}
+
+.image-description .delete-item button {
+    color: white;
+    background-color: #033803;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    text-align: center;
     border-radius: 0.3rem;
-    padding: 1rem;
+    cursor: pointer;
+}
+
+.image-description .delete-item .icon {
+    font-size: 1rem;
 }
 
 
+.headPhone-image {
+    background-color: rgba(211, 211, 211, 0.463);
+    width: 50%;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
 
 .headPhone-image img {
     margin: 0 auto;

@@ -9,23 +9,33 @@ const Checkout = () => {
         <div className="checkout">
             <div className="shippingContainer">
             <div className="review-item">
-                    <div className="container-description mt-2 p-9">
-                    <div className="text">
-                    <h1 className="font-semibold text-base mb-4">Review item And Shipping</h1>
+                <div className="container-description p-6">
+
+                <div className="text">
+                    <h1 className="font-bold text-lg">Review item And Shipping</h1>
                 </div>
+                      
+                    <div className="flex gap-28">
 
                         <div className="image-description flex gap-7">
                             <div className="headPhone-image">
                                 <img src="./Max.png" alt="headpphone" />
                             </div>
 
-                            <div className=" mt-12">
+                            <div className=" mt-1">
                                 <h2 className="font-semibold">Airpods-Max</h2>
                                 <p className="font-semibold">Color: <span className="text-sm font-medium">Pink</span></p>
-                            </div>
+
+                        <div className="delete-item mt-24">
+                            <button className="flex items-center">Remove Item
+                            <RiDeleteBin6Line className="icon"/></button>
                         </div>
 
-                        <div className="subtotal">
+                            </div>
+                            
+                        </div>
+
+                        <div className="subtotal font-semibold mr-2">
                             <CurrencyFormat
                              renderText={(value) => (
                                 <>
@@ -33,7 +43,7 @@ const Checkout = () => {
                                     Subtotal (0 items): <strong>{ ` ${value}`}</strong>
                                 </p>
                                 <small className="Subtotal__gift">
-                                    <input type="checkbox" /> Coupon
+                                    <input type="checkbox" className="cursor-pointer" /> Coupon
                                 </small>
                                 </>
                              )}
@@ -45,9 +55,9 @@ const Checkout = () => {
                              />
                         </div>
 
-                        <div className="delete-item">
-                            <button className="flex items-center">Remove Item <RiDeleteBin6Line/></button>
-                        </div>
+                    </div>
+
+
                     </div>
 
                     <div className="delivery-info">
