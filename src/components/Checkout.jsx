@@ -1,4 +1,5 @@
 import Payment from "./Payment";
+import CurrencyFormat from "react-currency-format";
 
 import { RiDeleteBin6Line } from "react-icons/ri";
 
@@ -23,9 +24,24 @@ const Checkout = () => {
                             </div>
                         </div>
 
-                        <div className="Item-price">
-                            <span><strong>$</strong>549.00</span>
-                            <p>Quality: <span>0</span></p>
+                        <div className="subtotal">
+                            <CurrencyFormat
+                             renderText={(value) => (
+                                <>
+                                <p>
+                                    Subtotal (0 items): <strong>{ ` ${value}`}</strong>
+                                </p>
+                                <small className="Subtotal__gift">
+                                    <input type="checkbox" /> Coupon
+                                </small>
+                                </>
+                             )}
+                             decimalScale={2}
+                             value={0}
+                             displayType={"text"}
+                             thousandSeparator={true}
+                             prefix={"$"}
+                             />
                         </div>
 
                         <div className="delete-item">
