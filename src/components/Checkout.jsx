@@ -55,7 +55,7 @@ const Checkout = () => {
                              />
                         </div>
 
-                      jkjjkkkfkk
+                      jkfdfofkkf
 
                     </div>
 
