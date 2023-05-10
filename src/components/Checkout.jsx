@@ -57,7 +57,7 @@ const Checkout = () => {
                         </div>
 
                     </div>
-                    
+                    nndnnn
                     </div>
 
                     <div className="delivery-info">
