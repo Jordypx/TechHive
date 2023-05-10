@@ -53,11 +53,14 @@ const Checkout = () => {
                              thousandSeparator={true}
                              prefix={"$"}
 
-                            
+                            lnpvnsonvvon
+                            jhhjkkcknl
                              
                              />
                         </div>
 
+
+klkkvpvvpjopll)()kddcmkk;ll[lm[]]
                      
 
                     </div>
