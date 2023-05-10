@@ -57,10 +57,6 @@ const Checkout = () => {
                         </div>
 
 
-                        
-
-                     
-
                     </div>
 
 
