@@ -54,7 +54,7 @@ const Checkout = () => {
                              prefix={"$"}
 
 
-                             nnfojoiwijoowwr
+                             
                              />
                         </div>
 
