@@ -56,7 +56,7 @@ const Checkout = () => {
                              />
                         </div>
 
-         n
+           klkjjjjjj
                     </div>
 
 
