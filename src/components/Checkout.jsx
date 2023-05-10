@@ -56,7 +56,7 @@ const Checkout = () => {
                              />
                         </div>
 
-                        vs
+                        m,mm
 
                     </div>
                     
