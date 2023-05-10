@@ -60,7 +60,6 @@ const Checkout = () => {
                         </div>
 
 
-klkkvpvvpjopll)()kddcmkk;ll[lm[]]
                      
 
                     </div>
