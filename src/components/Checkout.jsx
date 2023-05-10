@@ -56,7 +56,6 @@ const Checkout = () => {
                              />
                         </div>
 
-                        update
 
                     </div>
                     
