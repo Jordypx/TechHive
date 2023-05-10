@@ -56,10 +56,8 @@ const Checkout = () => {
                              />
                         </div>
 
-            
                     </div>
-
-
+                    
                     </div>
 
                     <div className="delivery-info">
