@@ -56,6 +56,8 @@ const Checkout = () => {
                              />
                         </div>
 
+                        wcn wn
+
                     </div>
                     
                     </div>
