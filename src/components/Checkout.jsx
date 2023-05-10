@@ -53,9 +53,10 @@ const Checkout = () => {
                              thousandSeparator={true}
                              prefix={"$"}
 
-                           
                              />
                         </div>
+
+                        
 
 
                      
