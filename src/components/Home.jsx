@@ -29,7 +29,6 @@ const Home = () => {
  
 export default Home;
 
-hhwuwug
 
 
    
