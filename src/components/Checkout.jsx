@@ -82,6 +82,6 @@ const Checkout = () => {
      );
 }
 
-jlnffo
+
  
 export default Checkout;
