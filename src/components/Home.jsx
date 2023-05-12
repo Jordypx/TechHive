@@ -30,5 +30,3 @@ const Home = () => {
 export default Home;
 
 
-
-noijojpk
