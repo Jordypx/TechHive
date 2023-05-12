@@ -82,6 +82,6 @@ const Checkout = () => {
      );
 }
 
-
+;;legjjj
  
 export default Checkout;
