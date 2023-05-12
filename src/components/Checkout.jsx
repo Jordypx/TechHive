@@ -82,6 +82,6 @@ const Checkout = () => {
      );
 }
 
-bjsfvnln
+
  
 export default Checkout;
