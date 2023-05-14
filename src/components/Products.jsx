@@ -166,7 +166,7 @@ const Products = ({ id, title, description, image, price, rating }) => {
             </div>
 
      );
-          nkqenm
+         
 }
  
 export default Products;
