@@ -4,11 +4,14 @@ import { BsCart2 } from 'react-icons/bs'
 import { BiPhone } from 'react-icons/bi'
 
 import { Link } from "react-router-dom";
+import { useStateValue } from '../contexts/StateProvider';
 
 
 const Header = () => {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
-    <div className="">
+    <div className="headers">
       <header className='head-content flex items-center justify-between p-1.5 m-0 text-white'>
         <div className="phone-number flex items-center gap-1 px-4">
           <BiPhone className='text-white text-xs' />
@@ -61,7 +64,7 @@ const Header = () => {
      <Link to="/checkout">
      <div className="cart flex gap-0.2s">
         <BsCart2  className='text-lg -mt-0.5'/>
-        {/* <span className="counter">0</span> */}
+        <span className="counter">{basket?.length}</span>
         <p className='text-sm'>cart</p>
       </div>
      </Link>

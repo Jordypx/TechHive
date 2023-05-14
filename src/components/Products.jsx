@@ -1,6 +1,22 @@
 import { RiStarSFill } from 'react-icons/ri'
+import { useStateValue } from '../contexts/StateProvider';
 
-const Products = ({ title, description, image, price, rating }) => {
+const Products = ({ id, title, description, image, price, rating }) => {
+   const [{ basket }, dispatch] = useStateValue();
+
+   const addToBasket = () => {
+    dispatch({
+        type: 'ADD_TO_BASKET',
+        item: {
+            id:id,
+            title:title,
+            image: image,
+            price: price,
+            rating: rating,
+        },
+    });
+   }
+
     return ( 
         <div className="p-9">
                 <h1 className="font-semibold text-lg">
@@ -31,7 +47,7 @@ const Products = ({ title, description, image, price, rating }) => {
                             </div>
 
                             <div className="addTocart">
-                                <button className="">Add to Cart</button>
+                                <button onClick={addToBasket} className="">Add to Cart</button>
                             </div>
                         </div>
 
