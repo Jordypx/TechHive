@@ -166,7 +166,7 @@ const Products = ({ id, title, description, image, price, rating }) => {
             </div>
 
      );
-          adnn
+            
 }
  
 export default Products;
