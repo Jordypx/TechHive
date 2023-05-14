@@ -3,8 +3,11 @@ import CurrencyFormat from "react-currency-format";
 
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb"
+import { useStateValue } from "../contexts/StateProvider";
 
 const Checkout = () => {
+  const [{ basket }, dispatch] = useStateValue();
+
     return ( 
         <div className="checkout">
             <div className="shippingContainer">
@@ -40,7 +43,7 @@ const Checkout = () => {
                              renderText={(value) => (
                                 <>
                                 <p>
-                                    Subtotal (0 items): <strong>{ ` ${value}`}</strong>
+                                    Subtotal ({basket.length} items): <strong>{ ` ${value}`}</strong>
                                 </p>
                                 <small className="Subtotal__gift">
                                     <input type="checkbox" className="cursor-pointer" /> Coupon
