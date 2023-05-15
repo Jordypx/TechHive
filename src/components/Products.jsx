@@ -42,7 +42,7 @@ const Products = ({ id, title, description, image, price, rating }) => {
                                 </div>
 
                                 <span className="">
-                                    345
+                                    (345)
                                 </span>
                             </div>
 
