@@ -20,6 +20,5 @@ function App() {
   )
 }
 
-lkkdc
 
 export default App;
