@@ -58,14 +58,14 @@ const Header = () => {
       </div>
 
       <div className="orders -mt-1 font-semibold">
-        <span>Orders</span>
+        <span className='cursor-pointer'>Orders</span>
       </div>
 
      <Link to="/checkout">
      <div className="cart flex gap-0.2s">
         <BsCart2  className='text-lg -mt-0.5'/>
-        <span className="counter">{basket?.length}</span>
-        <p className='text-sm'>cart</p>
+        <span className="counter -mt-0.9 font-semibold text-sm">{basket?.length}</span>
+        
       </div>
      </Link>
     </div>

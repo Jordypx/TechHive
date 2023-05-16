@@ -147,8 +147,14 @@
     margin-top: .6rem;
 }
 
+.headphones-container .Image-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1rem;
+}
+
 .headphones-container .Image-cards .image {
-    width: 97%;
+    width: 99%;
     height: 33vh;
     padding: 1rem;
     border-radius: 0.2rem;

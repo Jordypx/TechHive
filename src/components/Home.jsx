@@ -19,9 +19,7 @@ const Home = () => {
              </div>
 
             <div className="products">
-            <Products id="237647" title="Beats Headphone" description="brand new beats headphone with discount" price={150.99}
-            image="./beats.png"
-            rating={5}/>
+            <Products/>
             </div>
         </div>
      );

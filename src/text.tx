@@ -1,0 +1,103 @@
+
+            //      <div className="Image-cards">
+            //         <div className="image">
+            //             <img className='pt-5 pl-5' src="./Max.png" alt="" />
+            //         </div>
+
+            //         <div className="content flex gap-11">
+            //             <div className="description">
+            //                 <h2>AirPods Max</h2>
+            //                 <p>A brand new apple airpods max 2021</p>
+            //                 <div className="reviews flex gap-2">
+            //                 <div className="stars flex">
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                     </div>
+
+            //                     <span className="flex gap-2">
+            //                         345
+            //                     </span>
+            //                 </div>
+
+            //                 <div className="addTocart">
+            //                     <button className="">Add to Cart</button>
+            //                 </div>
+            //             </div>
+
+            //             <div className="price mr-2">
+            //                 <span>$250.<i>44</i></span>
+            //             </div>
+            //         </div>
+            //      </div>
+           
+
+            // <div className="Image-cards">
+            //         <div className="image">
+            //             <img src="./My project (3).png" alt="" />
+            //         </div>
+
+            //         <div className="content flex gap-11">
+            //             <div className="description">
+            //                 <h2>AirPods Max</h2>
+            //                 <p>A brand new apple airpods max 2021</p>
+            //                 <div className="reviews flex gap-2">
+            //                 <div className="stars flex">
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                     </div>
+
+            //                     <span className="">
+            //                         345
+            //                     </span>
+            //                 </div>
+
+            //                 <div className="addTocart">
+            //                     <button className="">Add to Cart</button>
+            //                 </div>
+            //             </div>
+
+            //             <div className="price mr-2">
+            //                 <span>$250.<i>44</i></span>
+            //             </div>
+            //         </div>
+            //      </div>
+
+            //      <div className="Image-cards">
+            //         <div className="image">
+            //             <img src="./headPhones.png" alt="" />
+            //         </div>
+
+            //         <div className="content flex gap-11">
+            //             <div className="description">
+            //                 <h2>AirPods Max</h2>
+            //                 <p>A brand new apple airpods max 2021</p>
+            //                 <div className="reviews flex gap-2">
+            //                 <div className="stars flex">
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                      <RiStarSFill />
+            //                     </div>
+
+            //                     <span className="">
+            //                         345
+            //                     </span>
+            //                 </div>
+
+            //                 <div className="addTocart">
+            //                     <button className="">Add to Cart</button>
+            //                 </div>
+            //             </div>
+
+            //             <div className="price mr-2">
+            //                 <span>$250.<i>44</i></span>
+            //             </div>
+            //         </div>
+            //      </div>
