@@ -4,8 +4,11 @@ import { useStateValue } from "../contexts/StateProvider";
 import Subtotal from "./Subtotal";
 
 
+
+
 const Checkout = () => {
   const [{ basket }, dispatch] = useStateValue();
+  console.log(basket)
 
   return (
     <div className="checkout">
@@ -13,23 +16,31 @@ const Checkout = () => {
         <div className="container-description p-6">
           <div className="">
             {basket.map((item) => (
-              <CheckoutProduct
-                id={item.id}
-                title={item.title}
-                image={item.image}
-                price={item.price}
-                rating={item.rating}
-              />
+             <div key={item.id}>
+             <CheckoutProduct
+               id={item.id}
+               title={item.title}
+               image={item.image}
+               price={item.price}
+               rating={item.rating}
+             />
+             <Subtotal price={item.price} />
+           </div>
+
             ))}
           </div>
 
+          
 
-          <div className="">
+
+          {/* <div className="">
           <Subtotal />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
+
+    
   );
 };
 
