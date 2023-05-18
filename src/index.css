@@ -199,6 +199,16 @@
     margin-top: 0.15rem;
 }
 
+
+/* login-page */
+.login {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .login-Text {
   font-size: 2rem;
   color: #045104;
