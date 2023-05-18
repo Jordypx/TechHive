@@ -1,10 +1,16 @@
 import Products from "../components/Products"
+import Header from "../components/Header"
 
 
 
 const Home = () => {
     return ( 
+
         <div className="Home">
+           <div className="head">
+            <Header />
+           </div>
+
              <div className="sub-container">
              <div className="container">
               <div className="home-discount">

@@ -2,6 +2,7 @@ import CheckoutProduct from "./CheckoutProduct";
 
 import { useStateValue } from "../contexts/StateProvider";
 import Subtotal from "./Subtotal";
+import Header from "./Header";
 
 
 
@@ -12,6 +13,10 @@ const Checkout = () => {
 
   return (
     <div className="checkout">
+         <div className="head">
+            <Header />
+           </div>
+
       <div className="shippingContainer">
         <div className="container-description p-6">
           <div className="">
