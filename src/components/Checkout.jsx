@@ -8,7 +8,7 @@ import Subtotal from "./Subtotal";
 
 const Checkout = () => {
   const [{ basket }, dispatch] = useStateValue();
-  console.log(basket)
+  
 
   return (
     <div className="checkout">

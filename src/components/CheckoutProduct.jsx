@@ -1,7 +1,17 @@
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { RiStarSFill } from 'react-icons/ri'
+import { useStateValue } from "../contexts/StateProvider";
 
 const CheckoutProduct = ({ id, title, image, price, rating }) => {
+  const [{ basket }, dispatch] = useStateValue();
+   
+  const removeFromBasket = () => {
+     dispatch({
+      type: 'REMOVE_FROM_BASKET',
+      id: id
+     })
+  }
+
   return (
     <div className="flex gap-8 items-center">
       <div className="checkout-image">
@@ -20,13 +30,13 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
             {Array(rating)
               .fill()
               .map((_, i) => (
-                <RiStarSFill key={id} />
+                <RiStarSFill key={`${id}-${i}`} />
               ))}
           </div>
 
         </div>
         <div className="delete_btn">
-            <button className="flex gap-1 text-xs mt-1">Remove item<RiDeleteBin6Line className="btn_delete"/></button>
+            <button onClick={removeFromBasket} className="flex gap-1 text-xs mt-1">Remove item<RiDeleteBin6Line className="btn_delete"/></button>
         </div>
       </div>
     </div>
