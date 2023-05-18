@@ -8,14 +8,14 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
         <img className="mb-9" src={image} alt="" />
       </div>
 
-      <div className="info">
-        <p>{title}</p>
+      <div className="info mb-8">
+        <p className="text-sm font-semibold">{title}</p>
 
-        <p>
+        <p className="mb-1">
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="review flex gap-2">
+        <div className="review flex gap-2 mb-1">
           <div className="stars flex">
             {Array(rating)
               .fill()
@@ -26,7 +26,7 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
 
         </div>
         <div className="delete_btn">
-            <button className="flex gap-1">Remove item<RiDeleteBin6Line className="mt-1.5"/></button>
+            <button className="flex gap-1 text-xs mt-1">Remove item<RiDeleteBin6Line className="mt-1"/></button>
         </div>
       </div>
     </div>

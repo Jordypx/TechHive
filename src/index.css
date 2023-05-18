@@ -180,3 +180,16 @@
     width: 100%;
     object-fit: cover;
 }
+
+.stars {
+    color: #045104;
+    background-color: white;
+}
+
+.delete_btn button {
+    padding: .5rem;
+    color: white;
+    background-color: #045104;
+    font-size: 0.7rem;
+    border-radius: 0.9rem;
+}
