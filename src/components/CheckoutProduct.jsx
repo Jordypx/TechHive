@@ -26,7 +26,7 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
 
         </div>
         <div className="delete_btn">
-            <button className="flex gap-1 text-xs mt-1">Remove item<RiDeleteBin6Line className="mt-1"/></button>
+            <button className="flex gap-1 text-xs mt-1">Remove item<RiDeleteBin6Line className="btn_delete"/></button>
         </div>
       </div>
     </div>

@@ -192,4 +192,9 @@
     background-color: #045104;
     font-size: 0.7rem;
     border-radius: 0.9rem;
+    cursor: pointer;
+}
+
+.delete_btn button .btn_delete {
+    margin-top: 0.15rem;
 }
