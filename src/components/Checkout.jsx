@@ -24,7 +24,6 @@ const Checkout = () => {
                price={item.price}
                rating={item.rating}
              />
-             <Subtotal price={item.price} />
            </div>
 
             ))}
@@ -33,9 +32,9 @@ const Checkout = () => {
           
 
 
-          {/* <div className="">
+          <div className="">
           <Subtotal />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

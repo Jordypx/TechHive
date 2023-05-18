@@ -170,3 +170,13 @@
 
 
 /* checkout page */
+
+.checkout-image {
+    width: 100px;
+    height: auto;
+}
+
+.checkout-image img {
+    width: 100%;
+    object-fit: cover;
+}

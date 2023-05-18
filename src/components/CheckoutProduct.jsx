@@ -3,9 +3,9 @@ import { RiStarSFill } from 'react-icons/ri'
 
 const CheckoutProduct = ({ id, title, image, price, rating }) => {
   return (
-    <div className="">
+    <div className="flex gap-8 items-center">
       <div className="checkout-image">
-        <img src={image} alt="" />
+        <img className="mb-9" src={image} alt="" />
       </div>
 
       <div className="info">
@@ -20,13 +20,13 @@ const CheckoutProduct = ({ id, title, image, price, rating }) => {
             {Array(rating)
               .fill()
               .map((_, i) => (
-                <RiStarSFill key={i} />
+                <RiStarSFill key={id} />
               ))}
           </div>
 
         </div>
         <div className="delete_btn">
-            <button className="">Remove item<RiDeleteBin6Line /></button>
+            <button className="flex gap-1">Remove item<RiDeleteBin6Line className="mt-1.5"/></button>
         </div>
       </div>
     </div>

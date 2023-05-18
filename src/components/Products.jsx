@@ -2,7 +2,7 @@ import { RiStarSFill } from 'react-icons/ri'
 import { useStateValue } from '../contexts/StateProvider';
 import mock from "/mock.json"
 
-const Products = ({ }) => {
+const Products = ({id, title, image, price, rating }) => {
    const [{ basket }, dispatch] = useStateValue();
 
    const addToBasket = (id, title, image, price, rating) => {
