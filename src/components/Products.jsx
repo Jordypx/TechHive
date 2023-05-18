@@ -2,7 +2,7 @@ import { RiStarSFill } from 'react-icons/ri'
 import { useStateValue } from '../contexts/StateProvider';
 import mock from "/mock.json"
 
-const Products = ({id, title, image, price, rating }) => {
+const Products = ({ }) => {
    const [{ basket }, dispatch] = useStateValue();
 
    const addToBasket = (id, title, image, price, rating) => {
@@ -44,7 +44,7 @@ const Products = ({id, title, image, price, rating }) => {
                   </div>
   
                   <div className="addTocart">
-                    <button onClick={() => addToBasket(post.id, post.title, post.image, post.price, post.rating)} className="">
+                    <button onClick={() => addToBasket(post.id, post.title, post.image, post.price, post.rating)} className="mb-8">
                       Add to Cart
                     </button>
                   </div>

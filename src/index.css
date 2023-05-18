@@ -198,3 +198,12 @@
 .delete_btn button .btn_delete {
     margin-top: 0.15rem;
 }
+
+.login-Text {
+  font-size: 2rem;
+  color: #045104;
+ font-weight: bolder;
+  margin-top: 2rem;
+  margin-left: 35.75rem;
+  object-fit: contain;
+}
