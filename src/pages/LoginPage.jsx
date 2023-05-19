@@ -2,28 +2,30 @@ import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
-    <div className="login">
+    <div className="logins">
       <div className="login-title">
         <Link to="/">
           <h1 className="login-Text">AudioZone</h1>
         </Link>
       </div>
 
-      <div className="login-container">
-         <h2>Sign-in</h2>
+      <div className="login-container mt-16">
+         <h1 className="text-2xl font-semibold">Sign-in</h1>
 
-         <form action="">
-            <label htmlFor="E-mail">E-mail</label>
-            <input type="email"/>
+         <form>
+            {/* <label htmlFor="E-mail">E-mail</label> */}
+            <h5>Email</h5>
+            <input type="text"/>
 
-            <label htmlFor="password">Password</label>
-            <input type="password" name="" />
+            {/* <label htmlFor="password">Password</label> */}
+            <h5>Password</h5>
+            <input type="password" />
 
             <button className="signInButton">Sign In</button>
          </form>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptas quam possimus harum? Inventore itaque nemo ducimus veritatis dolores sunt mollitia qui dicta laboriosam autem at enim eligendi reprehenderit possimus modi quae, eum repudiandae consequuntur? Tempore enim, error molestias mollitia inventore possimus, ex, ratione doloribus voluptatem quasi debitis. Odit, voluptatem!
+           Sign-In to your account to get access to other features available and remember to scroll through our latest devices.
         </p>
 
         <button className="registerButton">Create New Account</button>

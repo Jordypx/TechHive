@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div className="discount">
           <p>
-            Get 50% off on selected items <i className="">|</i>{" "}
+            Get 50% off on selected items <i className="">|</i>
             <span className="ml-2">Buy Now</span>
           </p>
         </div>
