@@ -14,7 +14,7 @@ const LoginPage = () => {
 
          <form>
             {/* <label htmlFor="E-mail">E-mail</label> */}
-            <h5>Email</h5>
+            <h5>E-mail</h5>
             <input type="text"/>
 
             {/* <label htmlFor="password">Password</label> */}
