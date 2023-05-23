@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { auth } from "./firebase.js";
+
+import { auth } from '../firebase/Firebase';
+
+
 
 const LoginPage = () => {
 
  const [email, setEmail] = useState('');
  const [password, setPassword] = useState('');
 
- const signIn = (e) => {
+ const signIn = e => {
   e.preventDefault();
  }
 
- const register = (e) => {
+ const register = e => {
   e.preventDefault();
 
   auth.createUserWithEmailAndPassword(email, password)
