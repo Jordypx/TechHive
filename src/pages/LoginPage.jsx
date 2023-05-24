@@ -1,29 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useState } from "react";
 
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase/Firebase';
-
-
 
 const LoginPage = () => {
 
+ const history = useHistory();
  const [email, setEmail] = useState('');
  const [password, setPassword] = useState('');
 
- const signIn = e => {
-  e.preventDefault();
- }
-
- const register = e => {
+ const signIn = (e) => {
   e.preventDefault();
 
-  auth.createUserWithEmailAndPassword(email, password)
-  .then((auth) => {
-    console.log(auth);
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    console.log(userCredential)
   })
-  .catch(error => alert(error.message))
+  .catch((error) => {
+    console.log(error);
+  });
+ };
 
- }
+ const register = (e) => {
+  e.preventDefault();
+
+  createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    console.log(userCredential)
+    if (userCredential) {
+      history.push('/')
+    }
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+ };
+
 
   return (
     <div className="logins">
@@ -60,3 +73,6 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+
+sdlh
