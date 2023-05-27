@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "tech-hive-cd5ea",
+    "staging": "tech-hive-cd5ea"
+  },
+  "targets": {},
+  "etags": {}
+}

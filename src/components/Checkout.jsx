@@ -34,9 +34,6 @@ const Checkout = () => {
             ))}
           </div>
 
-          
-
-
           <div className="">
           <Subtotal />
           </div>
@@ -49,3 +46,6 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
+
+nnnwnffn

@@ -3,11 +3,49 @@ import { BsSearch } from "react-icons/bs";
 import { BsCart2 } from "react-icons/bs";
 import { BiPhone } from "react-icons/bi";
 
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useEffect, useState } from "react";
+
+
 import { Link } from "react-router-dom";
 import { useStateValue } from "../contexts/StateProvider";
+import { auth } from "../firebase/Firebase";
 
 const Header = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+
+  // const [authUser, setAuthUser] = useState(null)
+
+  const handleAuth = () => {
+    if (user) {
+      signOut(auth).then(() => {
+        console.log('success')
+      })
+    }
+  }
+
+  useEffect(() =>{
+    const listen = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // setAuthUser(user);
+
+        dispatch({
+          type: 'SET_USER',
+          user: user
+        })
+      } else {
+        // setAuthUser(null);
+        dispatch({
+          type: 'SET_USER',
+          user: null
+        })
+      }
+    });
+
+    return () => {
+      listen();
+    }
+  }, []);
 
   return (
     <div className="headers">
@@ -52,10 +90,10 @@ const Header = () => {
         </div>
 
         <div className="options flex gap-7 mr-3 mt-3.5">
-          <Link to="/Login">
-            <div className="login flex">
+          <Link to={!user && '/Login'}>
+            <div className="login flex" onClick={handleAuth}>
               <RxPerson />
-              <span className="text-lg">sign in</span>
+              <span className="text-base">{user ? 'SignOut'  : 'SignIn'}</span>
             </div>
           </Link>
 

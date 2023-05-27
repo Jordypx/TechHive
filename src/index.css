@@ -64,9 +64,9 @@ body::-webkit-scrollbar-thumb
 }
 
 .login span {
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 0.2rem;
-    margin-top: -0.40rem;
+    margin-top: -0.26rem;
     cursor: pointer;
 }
 
