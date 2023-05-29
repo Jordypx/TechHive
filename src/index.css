@@ -175,6 +175,14 @@ body::-webkit-scrollbar-thumb
     column-gap: 1rem;
 }
 
+.headphones-container .Image-cards .image > img:hover {
+    scale: 1.2;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    transform: translateY(-0.2rem);
+  
+}
+
 .headphones-container .Image-cards .image {
     width: 99%;
     height: 33vh;
@@ -184,8 +192,10 @@ body::-webkit-scrollbar-thumb
     overflow: hidden;
 }
 
+
+
 .headphones-container .Image-cards .image > img {
-    width: 68%;
+    width: 66%;
     margin: 0 auto;
 }
 
@@ -214,7 +224,7 @@ body::-webkit-scrollbar-thumb
     color: white;
     background-color: #045104;
     font-size: 0.7rem;
-    border-radius: 0.9rem;
+    border-radius: 0.1rem;
     cursor: pointer;
 }
 
@@ -290,3 +300,36 @@ body::-webkit-scrollbar-thumb
   object-fit: contain;
 }
 
+
+/* PAYMENT */
+
+.payment {
+    background-color: white;
+}
+
+.payment__container {
+    
+}
+
+.payment__container > h1 {
+    text-align: left;
+    padding: 0.7rem;
+    font-weight: 400;
+    background-color: rgba(234, 237, 237, 0.183);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__section {
+    display: flex;
+    padding: 1rem;
+    margin: 0 .8rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__title {
+    flex: 0.2;
+}
+
+.payment__address {
+    flex: 0.8;
+}

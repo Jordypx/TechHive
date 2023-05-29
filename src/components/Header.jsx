@@ -4,7 +4,7 @@ import { BsCart2 } from "react-icons/bs";
 import { BiPhone } from "react-icons/bi";
 
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 
 import { Link } from "react-router-dom";
