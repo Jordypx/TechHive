@@ -244,7 +244,6 @@ body::-webkit-scrollbar-thumb
 .login-container {
     width: 350px;
     height: fit-content;
-    /* translate: 0 2rem; */
     padding: 1rem;
     margin: auto;
     background-color: white;
@@ -312,7 +311,8 @@ body::-webkit-scrollbar-thumb
 }
 
 .payment__container > h1 {
-    text-align: left;
+    margin-right: 2.3rem;
+    text-align: right;
     padding: 0.7rem;
     font-weight: 400;
     background-color: rgba(234, 237, 237, 0.183);
@@ -331,5 +331,9 @@ body::-webkit-scrollbar-thumb
 }
 
 .payment__address {
+    flex: 0.8;
+}
+
+.payment-items, .payment__details {
     flex: 0.8;
 }
