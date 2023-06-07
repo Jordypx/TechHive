@@ -14,6 +14,8 @@ const Payment = () => {
 
   const stripe = useStripe();
   const elements = useElements();
+
+
   const history = useNavigate();
 
 
@@ -21,20 +23,27 @@ const Payment = () => {
   const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
-  const [clientSecret, setClientSecret] = useState(true)
+  const [clientSecret, setClientSecret] = useState("")
 
   useEffect(() =>{
 //  generate the special stripe secret 
+
     const getClientSecret = async () => {
-      const response = await axios({
-        method: 'post',
-        url: `/paymments/create?total=${getBasketTotal(basket) * 100}`
+      const response = await axios.post({
+        method: 'POST',
+        url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+        amount: 1000,
+        currency: 'usd'
       });
-      setClientSecret(response.data.clientSecret)
-    }
+      setClientSecret(response.data.clientSecret);
+    };
+
 
     getClientSecret();
   }, [basket])
+
+  console.log( clientSecret)
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();

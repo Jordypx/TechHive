@@ -66,7 +66,7 @@ const Header = () => {
         </div>
       </header>
 
-      <div className="sub-heading flex justify-between px-10 mt-4">
+      <nav className="flex justify-between px-10 mt-4">
         <Link to="/">
           <div className="logo-text text-3xl tracking-wide font-bold font-sans overflow-hidden">
             Techive
@@ -110,9 +110,11 @@ const Header = () => {
             </div>
           </Link>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
 
 export default Header;
+
+
