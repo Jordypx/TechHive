@@ -15,7 +15,7 @@ const Header = () => {
   const [{ basket, user }, dispatch] = useStateValue();
 
   // const [authUser, setAuthUser] = useState(null)
-
+  
   const handleAuth = () => {
     if (user) {
       signOut(auth).then(() => {
