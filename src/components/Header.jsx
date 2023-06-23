@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../contexts/StateProvider";
 import { auth } from "../firebase/Firebase";
-
+ 
 const Header = () => {
   const [{ basket, user }, dispatch] = useStateValue();
 
