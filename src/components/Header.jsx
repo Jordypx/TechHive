@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <div className="headers">
-      <header className="head-content flex items-center justify-between p-1.5 m-0 text-white">
+      <header className="head-content flex items-center justify-between p-1.5 m-0 text-white sticky top-0 z-10">
         <div className="phone-number flex items-center gap-1 px-4">
           <BiPhone className="text-white text-xs" />
           <i>+234 975645636</i>
@@ -66,7 +66,7 @@ const Header = () => {
         </div>
       </header>
 
-      <nav className="flex justify-between px-10 mt-4">
+      <nav className="flex justify-between px-10 mt-4 sticky  bg-white z-100">
         <Link to="/">
           <div className="logo-text text-3xl tracking-wide font-bold font-sans overflow-hidden">
             Techive
@@ -97,9 +97,11 @@ const Header = () => {
             </div>
           </Link>
 
-          <div className="orders -mt-1 font-semibold">
+        <Link to="/Orders">
+        <div className="orders -mt-1 font-semibold">
             <span className="cursor-pointer">Orders</span>
           </div>
+        </Link>
 
           <Link to="/checkout">
             <div className="cart flex gap-0.2s">

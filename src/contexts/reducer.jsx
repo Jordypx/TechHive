@@ -6,7 +6,7 @@ export const initialState = {
 // slector
 
 export const getBasketTotal = (basket) => 
-    basket?.reduce((amount, item) => item.price + amount, 0);
+    basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
 
 
 const reducer = (state, action) => {
@@ -16,6 +16,13 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item],
             };
+
+
+            case "EMPTY_BASKET":
+                return {
+                    ...state,
+                    basket: []
+                }
 
             case "REMOVE_FROM_BASKET":
                const index = state.basket.findIndex(

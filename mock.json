@@ -3,7 +3,7 @@
     "id": "937647",
     "title": "AirMax Headphone",
     "description": "brand new beats headphone wit discount",
-    "price": "150.99",
+    "price": "150",
     "image": "./beats.png",
     "rating": 5
   },
@@ -11,7 +11,7 @@
     "id": "772647",
     "title": "Beats Headphone",
     "description": "brand new apple headphone with discount",
-    "price": "350.99",
+    "price": "350",
     "image": "./Max.png",
     "rating": 5
   },
@@ -19,7 +19,7 @@
     "id": "677647",
     "title": "Beats Headphone",
     "description": "brand new beats headphone wit discount",
-    "price": "250.99",
+    "price": "250",
     "image": "My project (3).png",
     "rating": 5
   },
@@ -27,7 +27,7 @@
     "id": "356647",
     "title": "Beats Headphone",
     "description": "brand new beats headphone wit discount",
-    "price": "120.99",
+    "price": "120",
     "image": "./headPhones.png",
     "rating": 5
   },
@@ -35,7 +35,7 @@
     "id": "499647",
     "title": "Beats Headphone",
     "description": "brand new beats headphone wit discount",
-    "price": "190.99",
+    "price": "190",
     "image": "./beats.png",
     "rating": 5
   }

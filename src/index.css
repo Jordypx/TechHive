@@ -39,11 +39,6 @@ body::-webkit-scrollbar-thumb
     background-color: #045104;
 }  
 
-.sub-heading {
-    position: sticky;
-    top: 0;
-}
-
 .logo-text {
     color: #002800;
 }
