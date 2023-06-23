@@ -21,7 +21,7 @@ const Header = () => {
       signOut(auth).then(() => {
         console.log('success')
       })
-    }
+    }  
   }
 
   useEffect(() =>{
