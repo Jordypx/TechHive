@@ -1,5 +1,6 @@
 import Products from "../components/Products"
 import Header from "../components/Header"
+import Footer from "./Footer";
 
 
 
@@ -26,6 +27,10 @@ const Home = () => {
 
             <div className="products">
             <Products/>
+            </div>
+
+            <div className="footer">
+              <Footer />
             </div>
         </div>
      );

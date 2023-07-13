@@ -5,46 +5,45 @@ import { BiPhone } from "react-icons/bi";
 
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect } from "react";
- 
 
 import { Link } from "react-router-dom";
 import { useStateValue } from "../contexts/StateProvider";
 import { auth } from "../firebase/Firebase";
- 
+
 const Header = () => {
   const [{ basket, user }, dispatch] = useStateValue();
 
   // const [authUser, setAuthUser] = useState(null)
-  
+
   const handleAuth = () => {
     if (user) {
       signOut(auth).then(() => {
-        console.log('success')
-      })
-    }  
-  }
+        console.log("success");
+      });
+    }
+  };
 
-  useEffect(() =>{
+  useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
         // setAuthUser(user);
 
         dispatch({
-          type: 'SET_USER',
-          user: user
-        })
+          type: "SET_USER",
+          user: user,
+        });
       } else {
         // setAuthUser(null);
         dispatch({
-          type: 'SET_USER',
-          user: null
-        })
+          type: "SET_USER",
+          user: null,
+        });
       }
     });
 
     return () => {
       listen();
-    }
+    };
   }, []);
 
   return (
@@ -74,34 +73,34 @@ const Header = () => {
         </Link>
 
         <div className="devices-WeSell mt-4">
-          <ul className="flex gap-5 text-xs font-semibold tracking-wider font-mono cursor-pointer">
-            <li>Laptops</li>
-            <li>Phones</li>
-            <li>HeadPhones</li>
-            <li>Speakers</li>
+          <ul className="flex gap-7 text-xs font-semibold tracking-wider cursor-pointer">
+            <li>Deals</li>
+            <li>What's New</li>
+            <li>Delivery</li>
+            <li>Support</li>
           </ul>
         </div>
 
         <div className="search-bar mt-1">
           <input type="text" placeholder="Search Products" />
-          <div className="search-icon">
+          <div className="search-icon mt-2">
             <BsSearch />
           </div>
         </div>
 
-        <div className="options flex gap-7 mr-3 mt-3.5">
-          <Link to={!user && '/Login'}>
+        <div className="options flex gap-7 mr-10 mt-3.5">
+          <Link to={!user && "/Login"}>
             <div className="login flex" onClick={handleAuth}>
               <RxPerson />
-              <span className="text-base">{user ? 'SignOut'  : 'SignIn'}</span>
+              <span className="text-sm">{user ? "LOGOUT" : "LOGIN"}</span>
             </div>
           </Link>
 
-        <Link to="/Orders">
-        <div className="orders -mt-1 font-semibold">
-            <span className="cursor-pointer">Orders</span>
-          </div>
-        </Link>
+          <Link to="/Orders">
+            <div className="orders -mt-1 font-semibold">
+              <span className="cursor-pointer">Orders</span>
+            </div>
+          </Link>
 
           <Link to="/checkout">
             <div className="cart flex gap-0.2s">
@@ -118,6 +117,3 @@ const Header = () => {
 };
 
 export default Header;
-   
-              
-              

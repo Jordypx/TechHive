@@ -20,7 +20,9 @@ const Products = ({ }) => {
   
   return (
     <div className="p-9">
-      <h1 className="font-semibold text-lg">New Releases</h1>
+      <div className="headNews">
+        <h1>HeadPhones For You!</h1>
+      </div>
   
       <div className="headphones-container pb-9  mt-3">
         <div className="Image-cards ml-9">
