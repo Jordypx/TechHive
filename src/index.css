@@ -352,3 +352,61 @@ body::-webkit-scrollbar-thumb
 .payment-items, .payment__details {
     flex: 0.8;
 }
+
+
+/* footer */
+
+.headservices {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+.headservices h1 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: #022f02;
+}
+
+.services {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.services .questions {
+    width: 86%;
+    padding: 0.8rem;
+    height: 25vh;
+    background-color: rgba(211, 211, 211, 0.566);
+}
+
+.services .Online {
+    width: 86%;
+    padding: 0.8rem;
+    height: 25.3vh;
+    background-color: rgba(211, 211, 211, 0.636);
+}
+
+.services .delivery {
+    width: 86%;
+    padding: 0.8rem;
+    height: 25.5vh;
+    background-color: rgba(211, 211, 211, 0.464);
+}
+
+.services .question-pic img{
+    width: 86%;
+    height: 40vh;
+}
+
+.services .online-image img{
+    width: 86%;
+    height: 40vh;
+}
+
+.services .home-image img {
+    width: 86%;
+    height: 40vh;
+}

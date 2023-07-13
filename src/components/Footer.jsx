@@ -1,15 +1,15 @@
 const Footer = () => {
     return ( 
         <div className="">
-            <div className="heading">
+            <div className="headservices">
                 <h1>Services to help you shop</h1>
-
-                <div className="sevices">
-                    <div className="">
+                </div>
+                <div className="services">
+                    <div className="frequent">
                         <div className="questions">
                             <p>Frequently Asked Question</p>
                         </div>
-                        <div className="question-image">
+                        <div className="question-pic">
                         <img src="./Questions.png" alt="" />
                         </div>
                     </div>
@@ -25,9 +25,11 @@ const Footer = () => {
                         <div className="delivery">
                             <p>Home Delivery</p>
                         </div>
+                        <div className="home-image">
+                            <img src="./grab-delivery.jpg" alt="" />
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
      );
 }
