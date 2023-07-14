@@ -391,6 +391,10 @@ body::-webkit-scrollbar-thumb
     background-color: rgba(211, 211, 211, 0.342);
 }
 
+.services .questions p{
+    color: #022f02;
+}
+
 .services .Online {
     width: 86%;
     padding: 0.8rem;
@@ -400,6 +404,10 @@ body::-webkit-scrollbar-thumb
     background-color: rgba(211, 211, 211, 0.286);
 }
 
+.services .Online p{
+    color: #022f02;
+}
+
 .services .delivery {
     width: 86%;
     padding: 0.8rem;
@@ -407,6 +415,10 @@ body::-webkit-scrollbar-thumb
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-color: rgba(211, 211, 211, 0.287);
+}
+
+.services .delivery p{
+    color: #022f02;
 }
 
 .services .question-pic img{
@@ -625,4 +637,36 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     left: 100%;
   }
+}
+
+.details-container {
+    gap: 11rem;
+    margin-top: 2.5rem;
+}
+
+.details-container .buds-image {
+    image-rendering: pixelated;
+    width: 420px;
+    height: auto;
+}
+
+.details-container .buds-image img {
+    width: 100%;
+    object-fit: cover;
+    background: rgba(211, 211, 211, 0.248);
+    padding: 2rem;
+    border-radius: 0.1rem;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.details h1 {
+    color: #045104;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
 }
