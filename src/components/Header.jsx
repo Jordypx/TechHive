@@ -92,7 +92,7 @@ const Header = () => {
           <Link to={!user && "/Login"}>
             <div className="login flex" onClick={handleAuth}>
               <RxPerson />
-              <span className="text-sm">{user ? "LOGOUT" : "LOGIN"}</span>
+              <span className="text-sm">{user ? "Logout" : "Login"}</span>
             </div>
           </Link>
 

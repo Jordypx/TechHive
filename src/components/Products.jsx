@@ -36,7 +36,7 @@ const Products = ({ }) => {
                 <div className="description">
                   <h2>{post.title}</h2>
                   <p>{post.description}</p>
-                  <div className="reviews flex gap-2">
+                  <div className="reviews flex gap-2 mb-8">
                     <div className="stars flex">
                       {Array(post.rating).fill().map((_, i) => (
                         <RiStarSFill key={i} />
@@ -45,11 +45,11 @@ const Products = ({ }) => {
                     <span className="">(345)</span>
                   </div>
   
-                  <div className="addTocart">
+                  {/* <div className="addTocart">
                     <button onClick={() => addToBasket(post.id, post.title, post.image, post.price, post.rating)} className="mb-8">
                       Add to Cart
                     </button>
-                  </div>
+                  </div> */}
                 </div>
   
                 <div className="price">
