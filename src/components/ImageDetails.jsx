@@ -29,7 +29,7 @@ const ImageDetails = () => {
           </div>  
       </div>
     </div>
-  );  
+  );    
 };
   
 export default ImageDetails;          
