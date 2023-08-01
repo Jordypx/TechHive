@@ -26,7 +26,7 @@ const ImageDetails = () => {
            </div>
 
             ))}
-          </div>
+          </div>  
       </div>
     </div>
   );  
