@@ -32,5 +32,5 @@ const ImageDetails = () => {
   );  
 };
 
-export default ImageDetails;    
+export default ImageDetails;      
                                                                                 
