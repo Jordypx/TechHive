@@ -31,6 +31,6 @@ const ImageDetails = () => {
     </div>
   );  
 };
-
+  
 export default ImageDetails;          
                                                                                           
