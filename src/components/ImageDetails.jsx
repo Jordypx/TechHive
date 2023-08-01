@@ -25,7 +25,7 @@ const ImageDetails = () => {
              />
            </div>
 
-            ))}
+            ))}  
           </div>  
       </div>
     </div>
