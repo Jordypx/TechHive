@@ -33,3 +33,4 @@ const ImageDetails = () => {
 };
 
 export default ImageDetails;
+  
