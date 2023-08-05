@@ -1,63 +1,77 @@
 import { useStateValue } from "../contexts/StateProvider";
-import { RiStarSFill } from 'react-icons/ri'
-import { FiMinus } from 'react-icons/fi'
-import { FiPlus } from 'react-icons/fi'
+import { RiStarSFill } from "react-icons/ri";
+import { FiMinus } from "react-icons/fi";
+import { FiPlus } from "react-icons/fi";
 
 const InfoImage = ({ id, title, image, price, rating, description }) => {
-    const [{ baskets }, dispatch] = useStateValue();
+  const [{ baskets }, dispatch] = useStateValue();
 
-    return (
-     <div className="">
+  return (
+    <div className="">
       <div className="details-container flex">
-      <div className="buds-image">
+        <div className="buds-image">
           <img className="" src={image} alt="" />
         </div>
-  
-        <div className="details mt-8">
+
+        <div className="details">
           <h1>{title}</h1>
-  
+
           <div className="description">
             <p>{description}</p>
           </div>
-  
-          <div className="review flex gap-2 mb-4">
-            <div className="stars flex">
+
+          <div className="review flex gap-1 mt-2">
+            <div className="stars flex mt-1.5">
               {Array(rating)
                 .fill()
                 .map((_, i) => (
                   <RiStarSFill key={`${id}-${i}`} />
                 ))}
             </div>
+            <span className="mb-4">(128)</span>
           </div>
-  
-          <p className="mb-1">
-            <small className="text-lg font-bold">$</small>
-            <strong className="text-lg">{price}<span className="ml-1">or 99.99/month</span></strong>
-          </p>
 
-          <div className="counter mt-28">
-            <div className="flex">
-                <div className="counts flex">
-                <FiMinus /><div className="">0</div><FiPlus />
-                </div>
+          <div className="pricing-discount">
+            <p className="">
+              <small className="text-lg font-bold">$</small>
+              <strong className="text-lg">
+                {price}
+                <span className="ml-1">or 99.99/month</span>
+              </strong>
+            </p>
 
-                <p>Only 12items left! <br /> Don't miss it</p>
+            <span className="text-xs font-semibold">
+              suggested payments with 6 months special financing
+            </span>
+          </div>
+
+          <div className="counters mt-28">
+            <div className="flex gap-9">
+              <div className="counts flex">
+                <FiMinus className="mt-1 ml-1 cursor-pointer" />
+                <div className="text-base">0</div>
+                <FiPlus className="mt-1 ml-1 cursor-pointer" />
+              </div>
+
+              <p>
+                Only <span>12items</span> left! <br /> Don't miss it
+              </p>
             </div>
 
             <div className="buy addtocart flex">
-                <div className="purchase">
-                    <button>Buy Now</button>
-                </div>
+              <div className="purchase">
+                <button>Buy Now</button>
+              </div>
 
-                <div className="addcart">
-                    <button>Add To Carts</button>
-                </div>
+              <div className="addcart">
+                <button>Add To Cart</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      );
-}
- 
+    </div>
+  );
+};
+
 export default InfoImage;

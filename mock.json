@@ -2,7 +2,7 @@
   {
     "id": "937647",
     "title": "Beats Headphone",
-    "description": "brand new beats headphone wit discount",
+    "description": "brand new beats headphone with discount",
     "price": "150.00",
     "image": "./beats.png",
     "rating": 5
@@ -33,8 +33,8 @@
   },
   {
     "id": "786647",
-    "title": "AirMax Headphone",
-    "description": "brand new ArmyGreen airmax with discount",
+    "title": "Beats Headphone",
+    "description": "brand new ArmyGreen beats with discount",
     "price": "170.98",
     "image": "./Armygreenbeats.png",
     "rating": 5
@@ -63,5 +63,4 @@
     "image": "./whiteAirpods.png",
     "rating": 5
   }
-
 ]
