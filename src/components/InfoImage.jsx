@@ -2,12 +2,21 @@ import { useStateValue } from "../contexts/StateProvider";
 import { RiStarSFill } from "react-icons/ri";
 import { FiMinus } from "react-icons/fi";
 import { FiPlus } from "react-icons/fi";
+import { BsArrowLeft } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const InfoImage = ({ id, title, image, price, rating, description }) => {
   const [{ baskets }, dispatch] = useStateValue();
 
   return (
     <div className="">
+      <div className="back-to-home">
+        <Link to="/">
+          <div className="back-icon">
+            <BsArrowLeft />
+          </div>
+        </Link>
+      </div>
       <div className="details-container flex">
         <div className="buds-image">
           <img className="" src={image} alt="" />
