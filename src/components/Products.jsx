@@ -19,7 +19,6 @@ const Products = ({}) => {
       },
     });
   };
-  ss;
 
   const ImageInfo = (id, title, image, price, rating, description) => {
     dispatch({
