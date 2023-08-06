@@ -51,7 +51,7 @@ const Products = ({}) => {
                   ImageInfo(
                     post.id,
                     post.title,
-                    post.image,hh
+                    post.image,
                     post.price,
                     post.rating,
                     post.description
