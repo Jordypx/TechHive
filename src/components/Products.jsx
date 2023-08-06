@@ -14,7 +14,7 @@ const Products = ({}) => {
         id: id,
         title: title,
         image: image,
-        price: price,hh
+        price: price,
         rating: rating,
       },
     });
