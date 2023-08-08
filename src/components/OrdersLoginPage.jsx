@@ -8,7 +8,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase/Firebase";
 
-const LoginPage = () => {
+const OrdersLoginPage = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ const LoginPage = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         if (userCredential) {
-          navigate("/");
+          navigate("/Orders");
         }
       })
       .catch((error) => {
@@ -33,7 +33,7 @@ const LoginPage = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         if (userCredential) {
-          navigate("/");
+          navigate("/Orders");
         }
       })
       .catch((error) => {
@@ -87,4 +87,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default OrdersLoginPage;

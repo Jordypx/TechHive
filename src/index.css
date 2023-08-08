@@ -125,6 +125,17 @@ body::-webkit-scrollbar-thumb {
   margin-top: 15%;
 }
 
+.empty-orders-message {
+  margin-left: 36%;
+  margin-top: 15%;
+}
+
+.empty-orders-message .message h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2.7rem;
+}
+
 .empty-cart-message .message h1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -137,13 +148,34 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
+.empty-orders-message .message p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .empty-cart-message .back-home-btn {
   margin-top: 1.3rem;
-  margin-left: 6.6rem;
+  margin-left: 5.89rem;
+}
+
+.empty-orders-message .back-home-btn {
+  margin-top: 1.3rem;
+  margin-left: 7.4rem;
 }
 
 .empty-cart-message .back-home-btn button {
-  background: #002800;
+  background: #014001;
+  color: #fff;
+  padding: 1rem;
+  width: 22%;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.empty-orders-message .back-home-btn button {
+  background: #014e01;
   color: #fff;
   padding: 1rem;
   width: 22%;
