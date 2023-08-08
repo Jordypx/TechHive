@@ -27,6 +27,7 @@ const InfoImage = ({ id, title, image, price, rating, description }) => {
         description,
       },
     });
+    egge;
   };
 
   const handleDecrement = () => {
