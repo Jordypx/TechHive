@@ -45,7 +45,7 @@ const LoginPage = () => {
     <div className="logins">
       <div className="login-title">
         <Link to="/">
-          <h1 className="login-Text">AudioZone</h1>
+          <h1 className="login-Text">TECHIVE</h1>
         </Link>
       </div>
 

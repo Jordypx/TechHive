@@ -7,6 +7,7 @@ import OrdersLoginPage from "./components/OrdersLoginPage";
 import Payment from "./components/Payment";
 import Orders from "./components/Orders";
 import ImageDetails from "./components/ImageDetails";
+import ProductSearch from "./components/ProductSearch";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Orders" element={<Orders />} />
           <Route path="/OrdersLoginPage" element={<OrdersLoginPage />} />
           <Route path="/Login" element={<LoginPage />} />
+          <Route path="/product" element={<ProductSearch />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/imageInfo" element={<ImageDetails />} />
           <Route path="/" element={<Home />} />

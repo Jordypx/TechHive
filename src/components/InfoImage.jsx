@@ -6,7 +6,6 @@ import { FiPlus } from "react-icons/fi";
 import { BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import mock from "/mock.json";
 
 const InfoImage = ({ id, title, image, price, rating, description }) => {
   const [{ baskets }, dispatch] = useStateValue();
@@ -30,9 +29,6 @@ const InfoImage = ({ id, title, image, price, rating, description }) => {
   };
 
   const handleDecrement = () => {
-    ff;
-    ff;
-    ff;
     if (count > 0) {
       setCount(count - 1);
       dispatch({
@@ -42,22 +38,8 @@ const InfoImage = ({ id, title, image, price, rating, description }) => {
     }
   };
 
-  const addToBaskets = () => {
+  const addBaskets = () => {
     navigate("/payment");
-
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
-    });
-  };
-
-  const addToCart = () => {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -67,6 +49,20 @@ const InfoImage = ({ id, title, image, price, rating, description }) => {
         price,
         rating,
         description,
+      },
+    });
+  };
+
+  const addToCart = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+        description: description,
       },
     });
   };
@@ -138,23 +134,7 @@ const InfoImage = ({ id, title, image, price, rating, description }) => {
 
             <div className="buy addtocart flex">
               <div className="purchase">
-                <Link
-                  to={{
-                    pathname: "/payment",
-                    state: {
-                      item: {
-                        id,
-                        title,
-                        image,
-                        price,
-                        rating,
-                        description,
-                      },
-                    },
-                  }}
-                >
-                  <button onClick={addToBaskets}>Buy Now</button>
-                </Link>
+                <button onClick={() => addBaskets()}>Buy Now</button>
               </div>
 
               <div className="addcart">

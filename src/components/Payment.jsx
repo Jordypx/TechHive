@@ -102,9 +102,6 @@ const Payment = () => {
             <h3>Delivery Information</h3>
           </div>
           <div className="payment__address">
-            <p>
-              Name:<span></span>
-            </p>
             <p>{user?.email}</p>
             <p>123 React LANE</p>
             <p>LA, NIGERIA</p>
